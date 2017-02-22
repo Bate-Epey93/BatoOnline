@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" ng-app="BatoApp">
 
 <head>
@@ -24,10 +24,22 @@
         <div>
             <form class="navbar-form navbar-right">
                 <div class="form-group">
-                    <a title="Signed in as User" data-container="body" data-toggle="popover" data-placement="left" data-content="Sign Out" data-animation="true" ><img src="login.jpg" class="img-circle"></a>
+                    <div class="dropdown">
+                    <a  class="dropdown-toggle" data-toggle="dropdown" data-content="Sign Out" data-animation="true" id="userdropMenu" aria-haspopup="true" ><img src="login.jpg" class="img-circle"><span class="caret"></span></a>
+                        <ul class="dropdown-menu aria-labelledby="userdropMenu">
+                            <li><p class="text-center">Signed In as<br /><a href="#"><bold>User</bold></a></p></li>
+                            <li class="divider" role="separator"></li>
+                            <li><a href="#">View Profile</a></li>
+                            <li><a href="#">Your Bato</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Sign Out</a></li>
+                        </ul>
+                    </div>
                 </div>
             </form>
-            <a class="nav-pill navbar-text navbar-right active" role="spinbutton" data-toggle="modal" data-target="#cartModal"> Cart <span class="badge"> 6 </span> </a>
+            <a class="nav-pill navbar-text navbar-right active" role="button" data-toggle="modal" data-target="#cartModal"> Cart <span class="badge"> 6 </span> </a>
             <!--modal for the cart-->
             <div id="cartModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
@@ -52,7 +64,7 @@
             </div>
             <!--end of modal-->
             <!--searchbox-->
-            <form class="navbar-form navbar-right" role="search">
+            <form class="navbar-form navbar-left" role="search">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="search" />
                     <div class="input-group-btn">
@@ -105,8 +117,8 @@
     <div class="row">
         <div class="col-md-3" id="navi">
             <nav class="nav nav-pills nav-stacked" id="navbar">
-                <div class="panel-group">
-                    <div class="panel panel-default">
+                <div class="panel-group" role="button">
+                    <div class="panel panel-default" role="button">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse1">one</a>
@@ -129,8 +141,7 @@
                             </li>
                         </ul>
                     </div>
-                    <br />
-                    <div class="panel panel-default">
+                    <div class="panel panel-default" role="button">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse2">two</a>
@@ -153,7 +164,6 @@
                             </li>
                         </ul>
                     </div>
-                    <br />
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
@@ -177,7 +187,6 @@
                             </li>
                         </ul>
                     </div>
-                    <br />
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
@@ -201,7 +210,6 @@
                             </li>
                         </ul>
                     </div>
-                    <br />
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
