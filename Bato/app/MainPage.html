@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="BatoApp">
+
+<head>
+    <title> BATO | WELCOME TO BATO </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="U-XA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/fonts/" />
+    <link rel="stylesheet" href="styles/bato.css" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--top nav starts here-->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <bold>BATO</bold>
+            </a>
+        </div>
+        <div>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <a title="Signed in as User" data-container="body" data-toggle="popover" data-placement="left" data-content="Sign Out" data-animation="true" ><img src="login.jpg" class="img-circle"></a>
+                </div>
+            </form>
+            <a class="nav-pill navbar-text navbar-right active" role="spinbutton" data-toggle="modal" data-target="#cartModal"> Cart <span class="badge"> 6 </span> </a>
+            <!--modal for the cart-->
+            <div id="cartModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3>My Cart</h3>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li>item one</li>
+                                <li>item two</li>
+                                <li>item three</li>
+                                <li>item four</li>
+                            </ul>
+                            <div class="modal-footer">
+                                <button class="btn btn-lg btn-success pull-right">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of modal-->
+            <!--searchbox-->
+            <form class="navbar-form navbar-right" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="search" />
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="glyphicon glyphicon-search"></i> <!--I still don't get why my glyphicons won't render-->
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <!--searchbox ends-->
+        </div>
+    </nav>
+    <!--top nav ends-->
+    <!--carousel-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <p class="fp">
+                    <bold>
+                        Dans notre Bato, Il y a un petit SASAYE pour chaque jour!!!!
+                    </bold>
+                </p>
+                <p>
+                    <a class="btn btn-lg btn-primary black">LEARN MORE</a>
+                </p>
+            </div>
+            <div class="item">
+                <h4>BOUMAYE WEEKENDS</h4>
+                <p>
+                    <bold>Get 20% discount on all Mobile phones & devices deal!!</bold>
+                </p>
+            </div>
+            <div class="item">
+                <h4>TGIF</h4>
+                <p>
+                    <bold>Thank God on Fridays for 50% off your 10 clothing transaction of the week!!</bold>
+                </p>
+            </div>
+        </div>
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev"> &lsaquo; </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next"> &rsaquo; </a>
+    </div>
+    <!--end of the carousel-->
+
+    <div class="row">
+        <div class="col-md-3" id="navi">
+            <nav class="nav nav-pills nav-stacked" id="navbar">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse1">one</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="#"></a>a
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>b
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>c
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>d
+                            </li>
+                        </ul>
+                    </div>
+                    <br />
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse2">two</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="#"></a>a
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>b
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>c
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>d
+                            </li>
+                        </ul>
+                    </div>
+                    <br />
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse3">three</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="#"></a>a
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>b
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>c
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>d
+                            </li>
+                        </ul>
+                    </div>
+                    <br />
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse4">four</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="#"></a>a
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>b
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>c
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>d
+                            </li>
+                        </ul>
+                    </div>
+                    <br />
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse5">five</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="#"></a>a
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>b
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>c
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#"></a>d
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img class="img-thumbnail" src="bato carousel 2.jpg" />
+                            </div>
+                            <div class="divider"></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-sm btn-success active">Add to Cart</button>
+                                <button class="btn btn-sm btn-primary pull-right active">View Details</button>
+
+                            </div>
+                        </div>
+                        <br />
+                        <hr class="divider" />
+                        <br />
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img class="img-thumbnail" src="bato carousel 2.jpg" />
+                            </div>
+                            <div class="divider"></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-sm btn-success active">Add to Cart</button>
+                                <button class="btn btn-sm btn-primary pull-right active">View Details</button>
+
+                            </div>
+                        </div>
+                        <br />
+                        <hr class="divider" />
+                        <br />
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img class="img-thumbnail" src="bato carousel 2.jpg" />
+                            </div>
+                            <div class="divider"></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-sm btn-success active">Add to Cart</button>
+                                <button class="btn btn-sm btn-primary pull-right active">View Details</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img class="img-thumbnail" src="bato carousel 2.jpg" />
+                            </div>
+                            <div class="divider"></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-sm btn-success active">Add to Cart</button>
+                                <button class="btn btn-sm btn-primary pull-right active">View Details</button>
+
+                            </div>
+                        </div>
+                        <br />
+                        <hr class="divider" />
+                        <br />
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img class="img-thumbnail" src="bato carousel 2.jpg" />
+                            </div>
+                            <div class="divider"></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-sm btn-success active">Add to Cart</button>
+                                <button class="btn btn-sm btn-primary pull-right active">View Details</button>
+
+                            </div>
+                        </div>
+                        <br />
+                        <hr class="divider" />
+                        <br />
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img class="img-thumbnail" src="bato carousel 2.jpg" />
+                            </div>
+                            <div class="divider"></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-sm btn-success active">Add to Cart</button>
+                                <button class="btn btn-sm btn-primary pull-right active">View Details</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img class="img-thumbnail" src="bato carousel 2.jpg" />
+                            </div>
+                            <div class="divider"></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-sm btn-success active">Add to Cart</button>
+                                <button class="btn btn-sm btn-primary pull-right active">View Details</button>
+                            </div>
+                        </div>
+                        <br />
+                        <hr class="divider" />
+                        <br />
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img class="img-thumbnail" src="bato carousel 2.jpg" />
+                            </div>
+                            <div class="divider"></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-sm btn-success active">Add to Cart</button>
+                                <button class="btn btn-sm btn-primary pull-right active">View Details</button>
+
+                            </div>
+                        </div>
+                        <br />
+                        <hr class="divider" />
+                        <br />
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img class="img-thumbnail" src="bato carousel 2.jpg" />
+                            </div>
+                            <div class="divider"></div>
+                            <div class="panel-footer">
+                                <button class="btn btn-sm btn-success active">Add to Cart</button>
+                                <button class="btn btn-sm btn-primary pull-right active">View Details</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+    </div>
+        <br />
+        <br />
+        <hr class="divider" />
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <footer>
+                        <p>&copy; 2017 Bato, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>  &middot;<a href="#">Conditions</a> &middot; <a href="#">Warranty</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="scripts/lib/angular.min.js"></script>
+        <script src="scripts/lib/jquery-3.1.1.min.js"></script>
+        <script src="scripts/lib/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="popover"]').popover();
+            });
+        </script>
+</body>
+
+</html>

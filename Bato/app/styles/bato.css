@@ -1,0 +1,92 @@
+﻿.navbar-brand {
+    font-family: Pacifico, cursive, Times, serif;
+    font-size: 30px;
+    color: black;
+
+}
+.img-circle {
+    width: 28px;
+    height: 30px;
+}
+#myCarousel {
+    height: 300px;
+    margin-top: 0px;
+    background-color: royalblue;
+    opacity: 0.8;
+}
+.btn-primary {
+    font-family:'Times New Roman', Times, serif;
+    background-color: tomato;
+}
+.item h4 {
+    padding: 20px;
+    font-family: Pacifico, cursive;
+    font-size: 40px;
+    font-stretch: ultra-expanded;
+    color: ghostwhite;
+    text-align: center;
+}
+.item .fp {
+    padding: 50px;
+    font-family: Pacifico, cursive;
+    font-size: 30px;
+    font-stretch: extra-expanded;
+    color: ghostwhite;
+    text-align: center;
+
+}
+.item p {
+    padding: 30px;
+    font-family: Pacifico, cursive;
+    font-style: oblique;
+    font-size: 40px;
+    font-stretch: extra-expanded;
+    color: ghostwhite;
+    text-align: center;
+}
+.navbar {
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+.nav h4 {
+    text-align: center;
+}
+div#navi.col-md-3 {
+    height: 100%;
+    padding-top: 30px;
+}
+.container {
+    margin-top: 40px;
+    margin-right: 2px;
+}
+.panel-group .panel {
+    border-radius: 0px;
+}
+.panel-group {
+    height:100%;
+    margin-left: 20px;
+}
+.btn {
+    border-radius: 0px;
+}
+.img-thumbnail {
+    padding: 0px;
+    margin: 0px;
+    border: 0px none white;
+}
+.foot {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color: wheat;
+}
+.col-12 {
+    font-family: Pacifico, cursive;
+    font-size: large;
+    text-align: center; 
+}
+.divider {
+    background-color: brown;
+}
+
