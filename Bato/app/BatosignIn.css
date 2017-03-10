@@ -1,0 +1,21 @@
+﻿body {
+    background: linear-gradient(rgba(103, 103, 113, 0.7), rgba(10, 10, 10, 0.37)), url('scart.png') no-repeat;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:right;
+}
+.card {
+    width: 400px;
+    margin-top: 5%;
+    margin-left: 35%;
+}
+h3 {
+    text-align: center;
+}
+.btn {
+    margin-left: 50%;
+}
+footer {
+    text-align: center;
+    color: white;
+}
